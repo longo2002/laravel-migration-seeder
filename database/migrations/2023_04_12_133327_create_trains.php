@@ -18,9 +18,9 @@ return new class extends Migration
             $table->string("manifacturer", 50);
             $table->string("departure", 50);
             $table->string("destination", 50);
-            $table->timestamp("departure_time");
-            $table->timestamp("arrival_time");
-            $table->int("wagon_number");
+            $table->time("departure_time");
+            $table->time("arrival_time");
+            $table->integer("wagon_number");
             $table->boolean("on_time");
             $table->boolean("late");
         });
