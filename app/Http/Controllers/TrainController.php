@@ -12,4 +12,10 @@ class TrainController extends Controller
    {
     return view("welcome");
    }
+
+   public function trains()
+   {
+    return view("index");
+   }
+
 }
